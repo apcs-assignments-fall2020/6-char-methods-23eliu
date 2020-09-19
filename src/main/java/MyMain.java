@@ -57,10 +57,11 @@ public class MyMain {
         System.out.println("Please enter a string");
         String input = scan.next();
         System.out.println("What would you like to make your string, lowercase or uppercase?");
-        if (scan.next() == "lowercase") {
+        String choose = scan.next();
+        if (choose == "lowercase") {
             System.out.println(myToLowerCase(input));
         }
-        if (scan.next() == "uppercase") {
+        if (choose == "uppercase") {
             System.out.println(myToUpperCase(input));
         }
         scan.close();
